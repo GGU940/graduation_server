@@ -15,7 +15,12 @@ const CutoutItemSchema = new mongoose.Schema({
 const CutoutSchema = new mongoose.Schema({
     userName: String,
     timestamp: String,
-    cutouts: [CutoutItemSchema] // ✅ 배열로 정의
+    cutouts: { // 4개의 면을 가진 객체
+        front: [CutoutItemSchema],
+        back: [CutoutItemSchema],
+        left: [CutoutItemSchema],
+        right: [CutoutItemSchema]
+    }
 });
 
 module.exports = mongoose.model('Cutout', CutoutSchema);
