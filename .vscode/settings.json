@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.port": 5501,
+    "mongodb.showMongoDBShellInPlayground": true,
+    "mongodb.playground.defaultDB": "collageApp",
+    "mongodb.useDefaultConnection": true
+}
